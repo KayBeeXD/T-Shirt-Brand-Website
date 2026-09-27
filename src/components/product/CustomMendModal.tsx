@@ -63,7 +63,7 @@ export const CustomMendModal: React.FC = () => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.94, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 220 }}
-            className="w-full max-w-3xl bg-[#F8F8F4] border border-[#1C2419] shadow-2xl relative my-8 overflow-hidden z-10"
+            className="w-full max-w-3xl bg-[#F8F8F4] border border-[#1C2419] shadow-2xl relative my-8 overflow-hidden z-10 max-h-[90vh] overflow-y-auto"
           >
             {/* Header Bar */}
             <div className="bg-[#1C2419] text-[#FAFBF6] p-4 flex items-center justify-between text-xs font-bold">

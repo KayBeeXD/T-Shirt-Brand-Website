@@ -53,7 +53,7 @@ export const ArtisanRepairModal: React.FC = () => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.94, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 220 }}
-            className="relative w-full max-w-lg bg-[#F8F8F4] border border-[#1C2419] shadow-2xl z-10 overflow-hidden"
+            className="relative w-full max-w-lg bg-[#F8F8F4] border border-[#1C2419] shadow-2xl z-10 overflow-hidden max-h-[90vh] overflow-y-auto"
           >
             {/* Header */}
             <div className="bg-[#1C2419] text-[#F8F8F4] p-4 flex items-center justify-between text-xs font-bold">
