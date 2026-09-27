@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-clean: #F8F8F4;
+    --bg-card: #FFFFFF;
+    --text-primary: #1C2419;
+    --text-muted: #5C6656;
+    --accent-olive: #475839;
+    --accent-rust: #B85B35;
+    --accent-lime: #C4E869;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    background-color: var(--bg-clean);
+    color: var(--text-primary);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, button, input, select, textarea, span, code, div {
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+}
+
+/* Subtle Borders */
+.border-subtle {
+  border: 1px solid rgba(28, 36, 25, 0.12);
+}
+
+/* Infinite Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Minimal Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F8F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #1C2419;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475839;
+}
